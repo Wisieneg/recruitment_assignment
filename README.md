@@ -3,7 +3,8 @@
 Do napisania aplikacji użyte zostały:
   - python 3.10.10
   - Flask 2.2.3
-  - Flask-SQLAlchemy==3.0.3
+  - Flask-SQLAlchemy 3.0.3
+  - Flask-Migrate 4.0.4
   - baza danych na silniku sqlite3
   - pytest 7.3.0
 
