@@ -29,7 +29,7 @@ def allowed_file(filename):
 def check_user(f):
     @wraps(f)
     def decorated(*args, **kwargs):
-        if "source" not in request.json and "source" not in request.form:
+        if "source" not in request.json:
             abort(400, "The source object is required in request json")
         user_id = request.json["source"]["user_id"]
         site = \
@@ -122,7 +122,6 @@ def gallery_get_one(site_id, gallery_id):
 
 
 @bp.route("/site/<int:site_id>/module/gallery/<int:gallery_id>", methods=["POST"])
-@check_user
 def gallery_photo_upload(site_id, gallery_id):
     """
     [User] Dodaje zdjęcie do albumu
