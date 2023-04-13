@@ -6,6 +6,9 @@ Do napisania aplikacji użyte zostały:
   - Flask-SQLAlchemy==3.0.3
   - baza danych na silniku sqlite3
   - pytest 7.3.0
+
+uruchomienie serwera: flask --app . run
+uruchomienie testów: python -m pytest -v
  
 Aplikacja została napisana przy pomocy blueprintów, oddzielnego dla widoków oraz dla błędów. W celu operacji na bazie użyłem silnika ORM. Dla ułatwienia testów baza danych jest tworzona na nowo przy każdym uruchomieniu aplikacji.
 
